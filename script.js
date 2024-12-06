@@ -51,12 +51,6 @@ document.getElementById('heartButton').addEventListener('click', function() {
     }, 2000); // Interval 2 detik
 
     // Menampilkan teks tambahan
-    extraText.textContent = "Hari ini adalah hari yang istimewa, hari di mana kita merayakan dua tahun perjalanan kita bersama. Dua tahun mungkin terasa singkat bagi sebagian orang, tetapi bagi kita, setiap detiknya adalah anugerah yang begitu berharga. Selama dua tahun ini, kita telah berbagi tawa, kebahagiaan, tantangan, dan bahkan air mata yang memperkuat ikatan kita.
-
-Perjalanan ini bukan hanya tentang kebersamaan, tetapi juga tentang pertumbuhan. Bersamamu, aku belajar untuk menjadi lebih baik, untuk memahami arti cinta yang tulus, dan untuk menghadapi hidup dengan keyakinan bahwa aku tidak sendirian. Kamu bukan hanya pasangan, tetapi juga sahabat, pendukung, dan tempat di mana aku selalu merasa nyaman.
-
-Terima kasih untuk semua yang telah kamu berikan, untuk cinta yang tak pernah putus, dan untuk setiap momen kecil yang membuat hidup ini lebih bermakna. Aku tak sabar menantikan semua yang akan kita lalui di masa depan, semua mimpi yang akan kita wujudkan, dan semua kenangan baru yang akan kita ciptakan bersama.
-
-Selamat ulang tahun yang kedua untuk perjalanan cinta kita. Semoga kita selalu diberkahi kebahagiaan, kesabaran, dan kekuatan untuk terus berjalan berdampingan, apa pun yang terjadi. Aku mencintaimu, sekarang dan selamanya.";
+    extraText.textContent = "Selamat ulang tahun yang kedua untuk perjalanan cinta kita. Semoga kita selalu diberkahi kebahagiaan, kesabaran, dan kekuatan untuk terus berjalan berdampingan, apa pun yang terjadi. Aku mencintaimu, sekarang dan selamanya.";
     extraText.style.opacity = 1;
 });

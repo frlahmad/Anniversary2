@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('photo3.jpg'); /* Ganti 'background.jpg' dengan gambar Anda */
+    background-size: cover;        /* Menyesuaikan ukuran gambar dengan layar */
+    background-position: center;   /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat;  /* Mencegah pengulangan gambar */
+    height: 100vh;                 /* Mengisi seluruh tinggi layar */
+    margin: 0;
+    display: flex;                 
+    flex-direction: column;        
+    justify-content: center;       
+    align-items: center;           
+    position: relative;            /* Untuk pseudo-element */
+    overflow: hidden;              /* Mencegah overflow */
+    color: #fff;                   /* Warna teks putih */
+} 
+
+/* Menambahkan overlay blur */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;    /* Menggunakan gambar latar belakang yang sama */
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);           /* Efek blur */
+    z-index: -1;                  /* Meletakkan di belakang konten */
+}
+
+
+
+h1 {
+    color: #e63946;
+    font-size: 2.5em;
+}
+
+.heart {
+    background: none;
+    border: none;
+    font-size: 5em;
+    cursor: pointer;
+    color: #f9babf;
+    animation: pulse 1.5s infinite;
+}
+
+.countdown {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.photo-gallery {
+    margin-top: 30px;
+}
+
+.photo-gallery img {
+    width: 300px;             /* Atur lebar gambar */
+    height: auto;             /* Menyesuaikan tinggi secara proporsional */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Bayangan lembut */
+}
+
+.extra-text {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 20px;
+    opacity: 0;              /* Awalnya tidak terlihat */
+    transition: opacity 1s;  /* Efek transisi saat muncul */
+}
+
+
+.bottom-right-text {
+    position: fixed;       /* Tetap di posisi saat halaman di-scroll */
+    bottom: 20px;          /* Jarak dari bawah */
+    right: 20px;           /* Jarak dari kanan */
+    font-size: 0.5em;      /* Ukuran teks */
+    color: #333;           /* Warna teks */ /* Latar belakang transparan */
+    padding: 10px 15px;    /* Padding agar lebih nyaman dibaca */  /* Sudut elemen melengkung */
+      /* Bayangan lembut */
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
